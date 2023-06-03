@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import './App.css';
 
 const App = () => {
     const [color, setColor] = useState('black');
@@ -42,16 +43,18 @@ const App = () => {
     };
 
     return (
-        <div
-            style={{
-                width: '255px',
-                height: '255px',
-                backgroundColor: color,
-            }}
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-            onDoubleClick={handleDoubleClick}
-        />
+        <div className="container">
+            <div className="container"
+                style={{
+                    width: '255px',
+                    height: '255px',
+                    backgroundColor: color,
+                }}
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+                onDoubleClick={handleDoubleClick}
+            />
+        </div>
     );
 };
 
