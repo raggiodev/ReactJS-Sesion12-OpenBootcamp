@@ -43,18 +43,16 @@ const App = () => {
     };
 
     return (
-        <div className="container">
-            <div className="container"
-                style={{
-                    width: '255px',
-                    height: '255px',
-                    backgroundColor: color,
-                }}
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
-                onDoubleClick={handleDoubleClick}
-            />
-        </div>
+        <div className="container"
+            style={{
+                width: '255px',
+                height: '255px',
+                backgroundColor: color,
+            }}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+            onDoubleClick={handleDoubleClick}
+        />
     );
 };
 
