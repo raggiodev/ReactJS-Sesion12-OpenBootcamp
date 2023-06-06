@@ -5,16 +5,16 @@ const App = () => {
     const [color, setColor] = useState('black');
     const [intervalId, setIntervalId] = useState(null);
 
-    const handleMouseEnter = () => {
+    const mouseEnter = () => {
         setColor(getRandomColor());
         startColorChange();
     };
 
-    const handleMouseLeave = () => {
+    const mouseLeave = () => {
         stopColorChange();
     };
 
-    const handleDoubleClick = () => {
+    const doubleClick = () => {
         stopColorChange();
     };
 
@@ -49,9 +49,9 @@ const App = () => {
                 height: '255px',
                 backgroundColor: color,
             }}
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-            onDoubleClick={handleDoubleClick}
+            onMouseEnter={mouseEnter}
+            onMouseLeave={mouseLeave}
+            onDoubleClick={doubleClick}
         />
     );
 };
